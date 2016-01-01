@@ -1,5 +1,20 @@
+<<<<<<< HEAD
 ---
 layout: base
 ---
 
 {% include post_list.html %}
+=======
+---
+layout: default
+title: 我的Blog
+---
+
+<h2>{{ page.title }} </h2>
+<p>最新文章:1234</p>
+<ul>
+    {% for post in site.posts %}
+        <li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+>>>>>>> origin/master
